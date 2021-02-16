@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class HiLo {
+	public static void main(String[] args) {
+		Scanner scan=new Scanner (System.in);
+		String playAgain="";
+		// TODO Auto-generated method stub
+		int theNumber=(int)(Math.random()*100+1);
+	//System.out.println( theNumber );
+	int guess=0;
+	while (guess !=theNumber) {
+		System.out.println("Guess number between 1 and 100:");
+		guess=scan.nextInt(); 
+if (guess<theNumber)
+	System.out.println(guess + " Is too low, try again");
+else if(guess>theNumber)
+	System.out.println(guess +" Is too hight, try again");
+else 
+	System.out.println(guess +" Is correct!!! you win!!!");
+	}
+	}
+
+}
